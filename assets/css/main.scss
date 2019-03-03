@@ -5,6 +5,7 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+<<<<<<< HEAD
 @import "minimal-mistakes"; // main partials
 
 html {
@@ -22,3 +23,6 @@ html {
       font-size: 18px; // change to whatever
     }
   }
+=======
+@import "minimal-mistakes"; // main partials
+>>>>>>> c0ba68cefe3eaffa019261c798ae557fbe41ceb1
