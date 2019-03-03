@@ -2,7 +2,7 @@
 title: "Jekyll 테마 적용하여 블로그 만들기(feat.Minimal Mistakes)_1"
 categories: 
   - blogging
-last_modified_at: 2018-07-01T13:00:00+09:00
+last_modified_at: 2019-03-03T13:00:00+09:00
 toc: true
 ---
 # Jekyll 테마 적용하여 블로그 만들기
@@ -26,10 +26,11 @@ Jekyll 테마를 적용하여 블로그 만드는 방법에는 여러가지가 �
 [지킬테마] <http://jekyllthemes.org>   
 위 사이트에 가면 똑똑한 사람들이 만들어놓은 여러가지 지킬 테마가 있다.
 처음에는 여기서 제일 간지나는 걸로 신중하게 선택했었는데, 커스터마이징하는 방법이 상세히 설명되어있지 않아서 컴맹인 나는 따라하기가 힘들었다 ㅠ.ㅠ  
- 그래서 사람들이 `많이` 사용하고 `사용법 설명이 많은` Minimal Mistakes 테마 선택 
+ 그래서 사람들이 `많이` 사용하고 `사용법 설명이 많은` Minimal Mistakes 테마 선택   
 [minimal-mistakes] <https://github.com/mmistakes/minimal-mistakes>
 
-덧붙임) ①의 방법대로 하면 fork해서 테마를 `쉽게` 입힐 수도 있지만, 그 방법대로 하면 minimal-mistakes의 모든 커밋로그가 내 블로그에도 따라오기 때문에 추천하지 않는다.
+덧붙임)   
+①의 방법대로 하면 fork해서 테마를 `쉽게` 입힐 수도 있지만, 그 방법대로 하면 minimal-mistakes의 모든 커밋로그가 내 블로그에도 따라오기 때문에 추천하지 않는다.
 
 ### 2. 테마 다운로드
 ![릴리즈 다운로드]({{site.url}}/assets/images/howToPosting/5.jpg)
@@ -46,7 +47,9 @@ Jekyll 테마를 적용하여 블로그 만드는 방법에는 여러가지가 �
     - minimal-mistakes-jekyll.gemspec
     - README.md
     - screenshot-layouts.png
-    - screenshot.png
+    - screenshot.png  
+
+ 참조   
 `/docs` <- <https://github.com/mmistakes/minimal-mistakes> 를 만드는 것에 사용된 파일이 있기 때문에 참조하려면 삭제하지 않아도 된다.
 ### 4. _posts 폴더 생성
 _posts : 배포될 포스트들이 담기는 폴더
@@ -62,8 +65,6 @@ gem파일을 아래의 내용으로 수정한다.
     
 
 여기까지 잘 따라했다면 블로그를 만드는데 필요한 파일들은 모두 준비가 되었다.
-여기까진 쉬움ㅋ  
-루비설치부터 골때림
 
 ---
 ### 5. 루비 다운로드
