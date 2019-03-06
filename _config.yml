@@ -12,7 +12,8 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# 스킨설정
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
 
 # Site Settings
 locale                   : "ko"
@@ -27,8 +28,8 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
+words_per_minute         : 200  # read time을 계산하기 위한 분당 읽는 글자수
+comments:                  # 댓글 설정에 대한 부분
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -64,8 +65,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+  # 사이트 내 검색 설정
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -98,13 +100,13 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : true # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-135636574-1
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# Site Author 사이트 설정
 author:
   name             : "Som"
   avatar           : "/assets/images/blog-cover.png"
@@ -279,7 +281,9 @@ compress_html:
   ignore:
     envs: development
 
-
+# Fromt Matter 설정
+# 페이지 본문에 적용되는 기본 설정들 정의
+# path로 경로 설정
 # Defaults
 defaults:
   # _posts
@@ -293,9 +297,12 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+
+      

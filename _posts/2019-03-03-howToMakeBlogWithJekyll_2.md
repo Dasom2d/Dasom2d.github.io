@@ -12,7 +12,8 @@ toc: true
 part1까지 잘 되었으면 이제 Github에 로컬 저장소와 연동하고, 포스팅할 수 있다.
 
 ### 1. Github에 저장소 생성하기
-- github에 저장소(Repositary)가 없는 경우 저장소부터 만든다.  
+- github에 저장소(Repositary)가 없는 경우 저장소부터 만든다.
+ 
 ![create Github repositary]({{site.url}}/assets/images/howToPosting/8.jpg)
 
 ① 자신의 Github로 가서 새로운 저장소를 만든다.   
@@ -48,11 +49,26 @@ _post폴더 내 md 파일로 저장
     categories: 
     - 카테고리 종류
     last_modified_at: 마지막 수정일
-    toc: true
+    toc: true // 사이드바 노출 유무
     ---
 
+### 4. 검색엔진에 등록하기
+[구글 검색엔진 등록하기] (https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)  
+[네이버 검색엔진 등록하기] (http://blog.saltfactory.net/register-with-github-pages-to-naver-search-engine/)
 
-
-md파일을 편집할 때는 난 하루패드나 visual studio code를 이용하는데 둘 다 딱히 단점도 장점도 없다.
     
+### 5. Google Analytics 서비스를 사용하여 통계 기능 추가
 
+![Google Analytics 서비스를 사용]({{site.url}}/assets/images/howToPosting/9.jpg)
+
+config.yml
+~~~
+# Analytics
+analytics:
+  provider               : true # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : # 발급받은 tracking_id
+    anonymize_ip         : # true, false (default)
+~~~
+
+[Google Analytics 적용하기] https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
